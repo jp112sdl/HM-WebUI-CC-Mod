@@ -1,0 +1,32 @@
+--- webui.js.orig	2018-08-24 17:27:05.000000000 +0200
++++ webui.js.new	2018-08-24 17:14:44.000000000 +0200
+@@ -26862,6 +26862,12 @@
+     if (this.opts.stTemp) {
+       this.showActualTemp();
+     }
++    if (this.opts.stBat) {
++      this.showActualBat();
++    }
++    if (this.opts.stValve !== null) {
++      this.showActualValve();
++    }
+     if (this.opts.idComfort && this.opts.idLowering) {
+       this.showComfortEco();
+     }
+@@ -27053,6 +27059,16 @@
+     jQuery("#"+this.id +"tblShowTemp").show();
+   },
+ 
++  showActualBat: function() {
++    jQuery("#"+this.id +"actBatteryState").text(this.opts.stBat);
++    jQuery("#"+this.id +"tblShowBatteryState").show();
++  },
++  
++  showActualValve: function() {
++    jQuery("#"+this.id +"actValveState").text(this.opts.stValve);
++    jQuery("#"+this.id +"tblShowValveState").show();
++  },
++  
+   showHolidayEndTime: function() {
+     var stopTime = this.getHolidayEndTime();
+     if (stopTime) {
