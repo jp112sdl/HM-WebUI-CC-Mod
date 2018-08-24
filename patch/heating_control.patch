@@ -1,5 +1,5 @@
---- heating_control.fn.orig	2018-08-24 17:24:38.000000000 +0200
-+++ heating_control.fn.new	2018-08-24 19:09:25.000000000 +0200
+--- /Users/pechj/Desktop/Homematic/OCCU/WebUI/www/rega/esp/controls/heating_control.fn	2018-08-24 17:24:38.000000000 +0200
++++ /tmp/heating_control.fn.new	2018-08-24 19:53:52.000000000 +0200
 @@ -4,11 +4,15 @@
    real rMin = 4.5;
    real rMax = 30.5;
@@ -35,16 +35,14 @@
    if( oLevel )
    {
      iLvlDpId = oLevel.ID();
-@@ -66,7 +80,35 @@
-       WriteLine("</table>");
+@@ -67,6 +81,34 @@
        !WriteLine("<div class='ControlBtnInfo _CLASS02550' style='line-height:15px; min-width:200px' id='"#chnId#"actualTemp' ><span>${stringTableWeatherTemperature}</span><span id='actTemp'"#sUnit#"></span></div>");
      WriteLine("</td>");
--  WriteLine("</tr>");
+   WriteLine("</tr>");
 + 
 +  if ( oBatteryState )
 +  { 
-+   WriteLine("</tr>");
-+    WriteLine("<tr>");
++   WriteLine("<tr>");
 +     WriteLine("<td>");
 +       WriteLine("<table id='"#chnId#"tblShowBatteryState' class='ControlBtnInfo hidden' style='width:200px; display: table;'>");
 +         WriteLine("<tr>");
