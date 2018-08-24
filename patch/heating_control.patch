@@ -1,4 +1,4 @@
---- /Users/pechj/Desktop/Homematic/OCCU/WebUI/www/rega/esp/controls/heating_control.fn	2018-08-24 17:24:38.000000000 +0200
+--- /tmp/heating_control.fn.orig	2018-08-24 17:24:38.000000000 +0200
 +++ /tmp/heating_control.fn.new	2018-08-24 19:53:52.000000000 +0200
 @@ -4,11 +4,15 @@
    real rMin = 4.5;
