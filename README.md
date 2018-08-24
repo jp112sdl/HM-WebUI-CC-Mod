@@ -8,9 +8,9 @@ Login via ssh and execute the following commands:<br/>
 - `mount -o remount,ro /`<br/>
 - `/etc/init.d/S70ReGaHss restart`<br/>
   
-**At least: clear your browser cache!**
+**At least: clear browser cache!**
 <br/>
-**Caution: This mod must be applied after every ccu/raspberrymatic firmware update**
+**Caution: This mod must be applied after every ccu/raspberrymatic firmware update.**
 
 
 ![WebUI](Images/WebUI_Display.png)
