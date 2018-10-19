@@ -6,7 +6,7 @@ function error() {
   exit 1
 }
 
-if ! grep -qF 'object oBatteryState = cObj.DPByHssDP("BATTERY_STATE");' ; then
+if grep -qF 'object oBatteryState = cObj.DPByHssDP("BATTERY_STATE");' ; then
   error 'Seems like heating_control.fn is already patched';
 fi
 
